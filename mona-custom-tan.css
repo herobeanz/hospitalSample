@@ -1,0 +1,32 @@
+/* .popup-apply-form .form-gr .wpcf7-form-control-wrap .wpcf7-not-valid-tip{
+    top: 27px;
+} */
+
+.item-content .item-detail img.icon {
+    width: 14px;
+    height: 14px;
+}
+
+.research-content .textbox p {
+    margin: 0 auto;
+    max-width: 894px;
+    text-align: center;
+}
+
+.banner-single .image-wrap {
+    height: 100%;
+}
+
+.department-layout .cta {
+    margin: auto;
+}
+
+.package .package-layout .rows .item {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.banner-single .image-wrap .overlay{
+    background: unset;
+}

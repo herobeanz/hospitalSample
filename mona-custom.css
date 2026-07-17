@@ -1,0 +1,437 @@
+/*** Import *****/
+
+@import url("404.css");
+@import url("loading-btn.css");
+@import url("loading-group.css");
+@import url("mona-custom-triet.css");
+@import url("mona-custom-tan.css");
+
+/*** End ****/
+
+.blog-info-tag span:before {
+  content: ",";
+  position: absolute;
+  bottom: 6px;
+  right: 0;
+  height: 100%;
+  font-size: 16px;
+  width: auto;
+  padding-right: 5px;
+}
+
+.blog-info-tag span {
+  position: relative;
+  display: inline-block;
+  padding-right: 10px;
+}
+
+.blog-info-tag span:last-child:before {
+  display: none;
+}
+
+.wpcf7 form .wpcf7-response-output {
+  border: 0;
+  margin: 15px 0;
+  padding: 0;
+  font-weight: bold;
+  font-size: 12px;
+}
+
+.wpcf7 form.sent .wpcf7-response-output {
+  color: #46b450;
+}
+
+.wpcf7 form.invalid .wpcf7-response-output {
+  color: red;
+}
+
+/**MONATHEME**/
+
+.wpcf7-response-output {
+  position: absolute;
+}
+
+.wpcf7-not-valid-tip {
+  position: absolute;
+  font-weight: bold;
+  font-size: 12px;
+}
+
+.banner-register .wpcf7-not-valid-tip {
+  font-size: 10px;
+  bottom: -18px;
+  left: 3px;
+}
+
+.banner-register .register-form-wrap .field .submit-form-mona button {
+  border: unset;
+}
+
+.banner-register .register-form-wrap .field .submit-form-mona .wpcf7-spinner {
+  bottom: -5px;
+  margin: 0 10px;
+}
+
+.popup.book .wpcf7-not-valid-tip {
+  right: 0;
+}
+
+.popup.book .submit-form {
+  position: relative;
+  margin: 10px auto;
+  text-align: center;
+}
+
+.popup.book .wpcf7-response-output {
+  bottom: 50px;
+  position: relative;
+  width: max-content;
+}
+
+.popup.book span.wpcf7-spinner {
+  position: absolute;
+  bottom: 10px;
+}
+
+.service-detail .keyword {
+  margin-bottom: 1rem;
+}
+
+.service-detail .keyword span {
+  color: #034ea2;
+  font-weight: bold;
+}
+
+.single-post .banner-single .image-wrap,
+.tax-category_specialist .banner-single .image-wrap {
+  height: 100%;
+}
+
+.tag.tag-main.current {
+  background-color: #0072bc;
+  color: #fff;
+}
+
+/*MONA CONTENT*/
+
+.mona-content blockquote {
+  margin: 0;
+  padding: 32px;
+  border-left: unset;
+  background-color: #f6f9ff;
+  border-radius: 12px;
+}
+
+@media screen and (min-width: 768px) {
+  .mona-content blockquote p {
+    padding-left: 3rem;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .mona-content blockquote {
+    padding: 1.2rem;
+  }
+}
+
+.mona-content blockquote cite {
+  position: relative;
+  padding-left: 110px;
+}
+
+.mona-content blockquote cite::before {
+  content: "";
+  position: absolute;
+  margin-right: 1rem;
+  background-color: #034ea2;
+  width: 60px;
+  height: 2px;
+  left: 30px;
+  bottom: 10px;
+}
+
+.mona-content .wp-block-quote p {
+  font-style: italic;
+}
+
+.single-mona_doctor h1 {
+  font-size: 3.6rem;
+  line-height: 3.8rem;
+}
+
+@media screen and (max-width: 991px) {
+  .single-mona_doctor h1 {
+    font-size: 2.6rem;
+    line-height: 3.6;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .single-mona_doctor h1 {
+    font-size: 2.6rem;
+    line-height: 1.1;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .single-mona_doctor h1 {
+    font-size: 2.2rem;
+    line-height: 1.1;
+  }
+}
+
+/*END MONA CONTENT*/
+
+/* START SOCIAL SHARE */
+
+.share-list .copylink_message {
+  position: absolute;
+  top: 100%;
+  transform: translateY(10px);
+  width: max-content;
+  display: none;
+}
+
+/* END SOCIAL SHARE */
+
+.mona-mess-keyword {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+span.keyword {
+  color: #034ea2;
+  margin: 0 1rem;
+  font-weight: bold;
+}
+
+.cols.full {
+  width: 100%;
+}
+
+.mona-mess-empty {
+  font-size: 18px;
+  margin-top: 20px;
+  text-align: center;
+  font-weight: 500;
+}
+
+.footer a:hover {
+  color: #00aeef;
+}
+
+.footer-info .r dt {
+  width: 30%;
+}
+
+.footer-info .r dd {
+  width: 70%;
+}
+
+.footer-info .r {
+  flex-wrap: unset;
+  align-items: flex-start;
+}
+
+.footer-nav ul li a {
+  color: #fff;
+}
+
+.menu-footer-menu-1-container {
+  color: #fff;
+}
+
+.footer-col .menu-footer-menu-1-container .menu-item+.menu-item {
+  margin-top: 1.6rem;
+}
+
+.keyword-mess-specialist {
+  margin-top: 1rem;
+  font-weight: bolder;
+  text-transform: initial;
+  color: #000;
+}
+
+.popup-apply-form .form-gr .wpcf7-form-control.wpcf7-text {
+  background: #f4f3f4;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  border-radius: 5px;
+  font-size: 1.4rem;
+  line-height: 1.5714285714;
+  letter-spacing: normal;
+  outline: none;
+  width: 100%;
+  padding: 0 1.6rem;
+  height: var(--h-input);
+}
+
+.popup-apply-form .form-gr .wpcf7-form-control.wpcf7-textarea {
+  width: 100%;
+  background: #f4f3f4;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  border-radius: 5px;
+  line-height: 1.5714285714;
+  letter-spacing: normal;
+  font-size: 1.4rem;
+  outline: none;
+  padding: 0 1.6rem;
+  padding: 1.6rem;
+  overflow: auto;
+  resize: none;
+}
+
+.wpcf7 ::placeholder {
+  opacity: 0.5;
+}
+
+.wpcf7-form-control.wpcf7-file {
+  display: none;
+}
+
+.popup.recruitment .submit-form {
+  position: relative;
+}
+
+.popup.recruitment span.wpcf7-spinner {
+  position: absolute;
+  left: 185px;
+  bottom: 15px;
+}
+
+.department-layout .cta {
+  margin: 24px auto !important;
+  text-align: center;
+}
+
+.home-page .banner-single {
+  background-color: #e6edf6;
+}
+
+.popup.booking-form .wpcf7-not-valid-tip {
+  position: absolute;
+  font-weight: bold;
+  font-size: 10px;
+  right: 12px;
+  bottom: -15px;
+}
+
+.popup-booking .submit-form .wpcf7-response-output {
+  position: absolute;
+  bottom: 50px;
+}
+
+.popup-booking .submit-form {
+  text-align: center;
+  position: relative;
+}
+
+.popup-booking .wpcf7-spinner {
+  position: absolute;
+  bottom: 15px;
+  left: 60%;
+}
+
+.menu-list .menu-item.current-menu-item a,
+.menu-list .menu-item.current-menu-ancestor>a,
+.menu-list .submenu-item.current-menu-item a {
+  color: #034ea2;
+  font-weight: bold;
+}
+
+span.wpcf7-not-valid-tip {
+  position: absolute;
+  right: 8px;
+  top: 13px;
+  font-size: 9px;
+}
+
+.upload .wpcf7-not-valid-tip {
+  position: relative;
+  right: auto;
+  top: auto;
+}
+
+.service-list.pt-sc {
+  padding-top: 45px;
+}
+
+.faqs-list .accordion-title {
+  cursor: pointer;
+}
+
+.popup-booking {
+  position: relative;
+}
+
+.popup-booking .wpcf7-response-output {
+  position: absolute;
+  bottom: -10px;
+}
+
+.item-desc.text-white.text-center.mt-4.mona-content p {
+  color: white;
+}
+
+.mona-video-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  padding-top: 30px;
+  height: 0;
+  overflow: hidden;
+}
+
+.mona-video-container iframe,
+.mona-video-container embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.mona-text-note {
+  font-family: gb;
+  font-size: var(--h2-fs);
+  line-height: var(--h2-lh);
+  color: #034ea2;
+  margin-bottom: 35px;
+  text-align: center;
+}
+
+.news.py-sc.mona-sec-blog-item:not(:first-child) {
+  padding-top: 0;
+}
+
+.single article .caption {
+  gap: 0;
+}
+
+.mona-content ul,
+.mona-content ol {
+  padding-left: 30px;
+  margin-bottom: 15px;
+}
+
+.mona-content ul li,
+.mona-content ol li {
+  list-style: auto;
+}
+
+.mona-content ul li::before,
+.mona-content ol li::before {
+  display: none;
+}
+
+.cta.mona-cta-package {
+  width: 100%;
+  text-align: center;
+  margin-top: 15px;
+}
+
+.hbtn-intro {
+  --size: 30px;
+}
+
+.faqs-pagination.mt-6 {
+  width: 100%;
+}

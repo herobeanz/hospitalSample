@@ -1,0 +1,60 @@
+/* FONT FACE - font-display: fallback; */
+
+@font-face {
+  font-family: "ir";
+  src: url("../fonts/Inter-Regular.woff2") format("woff2"),
+    url("../fonts/Inter-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: fallback;
+}
+@font-face {
+  font-family: "ib";
+  src: url("../fonts/Inter-Bold.woff2") format("woff2"),
+    url("../fonts/Inter-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: fallback;
+}
+@font-face {
+  font-family: "gr";
+  src: url("../fonts/SVN-Gilroy.woff2") format("woff2"),
+    url("../fonts/SVN-Gilroy.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: fallback;
+}
+
+@font-face {
+  font-family: "gsb";
+  src: url("../fonts/SVN-GilroySemiBold.woff2") format("woff2"),
+    url("../fonts/SVN-GilroySemiBold.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+  font-display: fallback;
+}
+
+@font-face {
+  font-family: "gb";
+  src: url("../fonts/SVN-GilroyBold.woff2") format("woff2"),
+    url("../fonts/SVN-GilroyBold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: fallback;
+}
+@font-face {
+  font-family: "gi";
+  src: url("../fonts/SVN-GilroyItalic.woff2") format("woff2"),
+    url("../fonts/SVN-GilroyItalic.woff") format("woff");
+  font-weight: normal;
+  font-style: italic;
+  font-display: fallback;
+}
+@font-face {
+  font-family: "gib";
+  src: url("../fonts/SVN-GilroyBoldItalic.woff2") format("woff2"),
+    url("../fonts/SVN-GilroyBoldItalic.woff") format("woff");
+  font-weight: bold;
+  font-style: italic;
+  font-display: fallback;
+}

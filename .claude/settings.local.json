@@ -1,0 +1,11 @@
+{
+  "permissions": {
+    "allow": [
+      "mcp__codebase-memory-mcp__get_architecture",
+      "WebFetch(domain:benhviendongnai.com.vn)",
+      "mcp__codebase-memory-mcp__search_code",
+      "WebFetch(domain:benhviensannhitravinh.gov.vn)",
+      "Bash(PYTHONIOENCODING=utf-8 python - <<'PY'\nfrom pathlib import Path\np=Path\\('F:/Project/ProjectCaNhan/hospitalSample/index.html'\\)\ns=p.read_text\\(encoding='utf-8', errors='ignore'\\)\nlogo='http://benhviensannhitravinh.gov.vn/upload/1002176/20251013/LOGO_MOI_f233c8ec56.png'\nplaceholder='__SAN_NHI_LOGO__'\n# Protect Sản Nhi logo only\ns=s.replace\\(logo, placeholder\\)\n# Restore all accidentally changed template/background/page links/assets to old template domain\ns=s.replace\\('http://benhviensannhitravinh.gov.vn', 'https://benhviendongnai.com.vn'\\)\ns=s.replace\\('benhviensannhitravinh.gov.vn/template', 'benhviendongnai.com.vn/template'\\)\ns=s.replace\\('benhviensannhitravinh.gov.vn/wp-content', 'benhviendongnai.com.vn/wp-content'\\)\ns=s.replace\\('benhviensannhitravinh.gov.vn/wp-includes', 'benhviendongnai.com.vn/wp-includes'\\)\ns=s.replace\\('benhviensannhitravinh.gov.vn/wp-json', 'benhviendongnai.com.vn/wp-json'\\)\ns=s.replace\\('benhviensannhitravinh.gov.vn/xmlrpc.php', 'benhviendongnai.com.vn/xmlrpc.php'\\)\n# Restore protected logo URL\ns=s.replace\\(placeholder, logo\\)\n# Keep canonical/site text as Sản Nhi where it is metadata/contact, not assets\ns=s.replace\\('<link rel=\"canonical\" href=\"https://benhviendongnai.com.vn/\" />', '<link rel=\"canonical\" href=\"http://benhviensannhitravinh.gov.vn/\" />'\\)\ns=s.replace\\('<meta property=\"og:url\" content=\"https://benhviendongnai.com.vn/\">', '<meta property=\"og:url\" content=\"http://benhviensannhitravinh.gov.vn/\">'\\)\ns=s.replace\\('<meta name=\"og:url\" content=\"https://benhviendongnai.com.vn/\">', '<meta name=\"og:url\" content=\"http://benhviensannhitravinh.gov.vn/\">'\\)\n# Header logo link should go to Sản Nhi site, not template old site\ns=s.replace\\('<a href=\"https://benhviendongnai.com.vn/\" class=\"custom-logo-link\"', '<a href=\"http://benhviensannhitravinh.gov.vn/\" class=\"custom-logo-link\"'\\)\n# Footer policy link should remain old template if wanted; no contact identity impact.\np.write_text\\(s, encoding='utf-8'\\)\nPY)"
+    ]
+  }
+}
