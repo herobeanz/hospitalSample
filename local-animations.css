@@ -133,12 +133,11 @@
   to { transform: scale(1.045); }
 }
 
-/* Make exported images fill their frames instead of leaving white gaps */
+/* Banner slider: match original wide image structure without cropping corners */
 .banner-half-image,
-.banner-slider .image,
-.banner-slider .bg-image,
+.banner-half-image .bg-image,
+.banner-half-image .image,
 .banner-slider picture,
-.banner-slider .swiper-slide > div,
 .recruitment .image,
 .footer .bg,
 .author-avatar,
@@ -146,9 +145,53 @@
   overflow: hidden;
 }
 
+.banner-half-image {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 2560 / 747;
+  min-height: 0 !important;
+  background: #eaf7fd;
+}
+
+.banner-half-image .bg-image,
+.banner-half-image .image {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.banner-half-image .bg-gradient {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  pointer-events: none;
+}
+
 .banner-half-image img,
-.banner-slider .image img,
-.banner-slider .bg-image img,
+.banner-half-image .image img,
+.banner-half-image .bg-image img {
+  display: block;
+  width: 100% !important;
+  height: 100% !important;
+  min-height: 0 !important;
+  object-fit: contain !important;
+  object-position: center !important;
+  animation: none !important;
+}
+
+.banner-half-image .content {
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+}
+
+.banner-slider .swiper-slide,
+.banner-slider .carousel-slide {
+  height: auto !important;
+  min-height: 0 !important;
+}
+
 .recruitment img,
 .footer .bg img,
 img.attachment-full,
@@ -158,17 +201,6 @@ img.size-full {
   height: 100% !important;
   object-fit: cover !important;
   object-position: center !important;
-}
-
-.banner-half-image,
-.banner-slider .swiper-slide,
-.banner-slider .carousel-slide {
-  min-height: clamp(320px, 52vw, 680px);
-}
-
-.banner-half-image img,
-.banner-slider .swiper-slide img {
-  min-height: clamp(320px, 52vw, 680px);
 }
 
 .header-logo .custom-logo,
@@ -323,12 +355,8 @@ img.size-full {
 }
 
 @media (max-width: 640px) {
-  .banner-half-image,
-  .banner-slider .swiper-slide,
-  .banner-slider .carousel-slide,
-  .banner-half-image img,
-  .banner-slider .swiper-slide img {
-    min-height: 260px;
+  .banner-half-image {
+    aspect-ratio: 2560 / 747;
   }
 
   .reviews-list .swiper-slide,
